@@ -636,9 +636,9 @@ async def filters_buttons(user_id):
                     callback_data=f'settings#updatefilter-forward_tag-{filter["forward_tag"]}')
        ],[
        InlineKeyboardButton('🖍️ Texts',
-                    callback_data=f'settings_#updatefilter-text-{filter["text"]}'),
-       InlineKeyboardButton('✅' if filter['text'] else '❌',
-                    callback_data=f'settings#updatefilter-text-{filter["text"]}')
+                    callback_data=f'settings_#updatefilter-text-{filters["text"]}'),
+       InlineKeyboardButton('✅' if filters['text'] else '❌',
+                    callback_data=f'settings#updatefilter-text-{filters["text"]}')
        ],[
        InlineKeyboardButton('📁 Documents',
                     callback_data=f'settings_#updatefilter-document-{filters["document"]}'),
