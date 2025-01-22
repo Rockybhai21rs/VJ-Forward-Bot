@@ -637,7 +637,7 @@ async def filters_buttons(user_id):
        ],[
        InlineKeyboardButton('🖍️ Texts',
                     callback_data=f'settings_#updatefilter-text-{filters["text"]}'),
-       InlineKeyboardButton('✅' if filters['text'] else '❌',
+       InlineKeyboardButton('✅' if filter['text'] else '❌',
                     callback_data=f'settings#updatefilter-text-{filters["text"]}')
        ],[
        InlineKeyboardButton('📁 Documents',
@@ -657,7 +657,7 @@ async def filters_buttons(user_id):
        ],[
        InlineKeyboardButton('🎧 Audios',
                     callback_data=f'settings_#updatefilter-audio-{filters["audio"]}'),
-       InlineKeyboardButton('✅' if filters['audio'] else '❌',
+       InlineKeyboardButton('✅' if filter['audio'] else '❌',
                     callback_data=f'settings#updatefilter-audio-{filters["audio"]}')
        ],[
        InlineKeyboardButton('⫷ back',
