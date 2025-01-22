@@ -637,7 +637,7 @@ async def filters_buttons(user_id):
        ],[
        InlineKeyboardButton('🖍️ Texts',
                     callback_data=f'settings_#updatefilter-text-{filters["text"]}'),
-       InlineKeyboardButton('✅' if filters['text'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-text-{filters["text"]}')
        ],[
        InlineKeyboardButton('📁 Documents',
@@ -652,12 +652,12 @@ async def filters_buttons(user_id):
        ],[
        InlineKeyboardButton('📷 Photos',
                     callback_data=f'settings_#updatefilter-photo-{filters["photo"]}'),
-       InlineKeyboardButton('✅' if filters['photo'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-photo-{filters["photo"]}')
        ],[
        InlineKeyboardButton('🎧 Audios',
                     callback_data=f'settings_#updatefilter-audio-{filters["audio"]}'),
-       InlineKeyboardButton('✅' if filters['audio'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-audio-{filters["audio"]}')
        ],[
        InlineKeyboardButton('⫷ back',
@@ -678,17 +678,17 @@ async def next_filters_buttons(user_id):
        ],[
        InlineKeyboardButton('🎤 Voices',
                     callback_data=f'settings_#updatefilter-voice-{filters["voice"]}'),
-       InlineKeyboardButton('✅' if filters['voice'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-voice-{filters["voice"]}')
        ],[
        InlineKeyboardButton('🎭 Animations',
                     callback_data=f'settings_#updatefilter-animation-{filters["animation"]}'),
-       InlineKeyboardButton('✅' if filters['animation'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-animation-{filters["animation"]}')
        ],[
        InlineKeyboardButton('🃏 Stickers',
                     callback_data=f'settings_#updatefilter-sticker-{filters["sticker"]}'),
-       InlineKeyboardButton('✅' if filters['sticker'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-sticker-{filters["sticker"]}')
        ],[
        InlineKeyboardButton('▶️ Skip duplicate',
@@ -698,7 +698,7 @@ async def next_filters_buttons(user_id):
        ],[
        InlineKeyboardButton('📊 Poll',
                     callback_data=f'settings_#updatefilter-poll-{filters["poll"]}'),
-       InlineKeyboardButton('✅' if filters['poll'] else '❌',
+       InlineKeyboardButton('✅' if filters[''] else '❌',
                     callback_data=f'settings#updatefilter-poll-{filters["poll"]}')
        ],[
        InlineKeyboardButton('🔒 Secure message',
